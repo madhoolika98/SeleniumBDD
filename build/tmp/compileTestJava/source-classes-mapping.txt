@@ -1,0 +1,31 @@
+org/orange/hrm/automation/common/Generic.java
+ org.orange.hrm.automation.common.Generic
+org/orange/hrm/automation/common/AppGeneric.java
+ org.orange.hrm.automation.common.AppGeneric
+org/orange/hrm/automation/constants/GlobalConstants.java
+ org.orange.hrm.automation.constants.GlobalConstants
+org/orange/hrm/automation/pages/AddNewEmployeePage.java
+ org.orange.hrm.automation.pages.AddNewEmployeePage
+ org.orange.hrm.automation.pages.AddNewEmployeePage$AddNewEmployeePageObjects
+org/orange/hrm/automation/pages/HomePage.java
+ org.orange.hrm.automation.pages.HomePage
+ org.orange.hrm.automation.pages.HomePage$HomePageObjects
+org/orange/hrm/automation/stepDefinitions/Hook.java
+ org.orange.hrm.automation.stepDefinitions.Hook
+org/orange/hrm/automation/stepDefinitions/LoginSteps.java
+ org.orange.hrm.automation.stepDefinitions.LoginSteps
+org/orange/hrm/automation/pages/PageManager.java
+ org.orange.hrm.automation.pages.PageManager
+org/orange/hrm/automation/base/TestBase.java
+ org.orange.hrm.automation.base.TestBase
+org/orange/hrm/automation/stepDefinitions/HomeSteps.java
+ org.orange.hrm.automation.stepDefinitions.HomeSteps
+org/orange/hrm/automation/pages/LoginPage.java
+ org.orange.hrm.automation.pages.LoginPage
+ org.orange.hrm.automation.pages.LoginPage$LoginPageObjects
+org/orange/hrm/automation/stepDefinitions/AddNewEmployeeSteps.java
+ org.orange.hrm.automation.stepDefinitions.AddNewEmployeeSteps
+org/orange/hrm/automation/stepDefinitions/StepManager.java
+ org.orange.hrm.automation.stepDefinitions.StepManager
+org/orange/hrm/automation/runners/TestRunner.java
+ org.orange.hrm.automation.runners.TestRunner

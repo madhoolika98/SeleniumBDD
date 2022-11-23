@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.orange.hrm.automation.runners.TestRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-23T04:29:08" hostname="IN-5CG0253H7D" time="147.889">
+  <properties/>
+  <testcase name="runScenario[0](&quot;Adding a new employee&quot;, &quot;Add Employee&quot;)" classname="org.orange.hrm.automation.runners.TestRunner" time="115.793"/>
+  <testcase name="runScenario[1](&quot;Valid Login Test&quot;, &quot;Login&quot;)" classname="org.orange.hrm.automation.runners.TestRunner" time="32.096"/>
+  <system-out><![CDATA[
+@addEmployee
+Scenario: Adding a new employee                                                # src/test/resources/features/addNewEmployee.feature:8
+login successful
+  Given Logged into the application as admin                                   # org.orange.hrm.automation.stepDefinitions.AddNewEmployeeSteps.loggedIntoTheApplicationAsAdmin()
+Inserted Employee Information
+  When Added the New Employee information First Name,Middle Name and Last Name # org.orange.hrm.automation.stepDefinitions.AddNewEmployeeSteps.addedTheNewEmployeeInformationFirstNameMiddleNameAndLastName(io.cucumber.datatable.DataTable)
+    | First Name | Middle Name | Last Name |
+    | Frank      | Finn        | Hill      |
+Saving employee information
+  And Saved the employee details                                               # org.orange.hrm.automation.stepDefinitions.AddNewEmployeeSteps.savedTheEmployeeDetails()
+  When Searched for the Employee <"Frank Finn Hill">in the Employee List       # org.orange.hrm.automation.stepDefinitions.AddNewEmployeeSteps.searchedForTheEmployeeInTheEmployeeList(java.lang.String)
+  Then The Employee details should be displayed                                # org.orange.hrm.automation.stepDefinitions.AddNewEmployeeSteps.theEmployeeDetailsShouldBeDisplayed()
+Scenario Execution Completed Successfully
+
+@login
+Scenario Outline: Valid Login Test                                  # src/test/resources/features/login.feature:14
+app launch
+  Given Application is launched in the browser                      # org.orange.hrm.automation.stepDefinitions.LoginSteps.applicationIsLaunchedInTheBrowser()
+admin
+admin123
+  When user logged in with valid credentials "admin" and "admin123" # org.orange.hrm.automation.stepDefinitions.LoginSteps.user_logged_in_with_valid_credentials_and(java.lang.String,java.lang.String)
+login successful
+  Then user should see login is successful                          # org.orange.hrm.automation.stepDefinitions.LoginSteps.user_should_see_login_is_successful()
+Scenario Execution Completed Successfully
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 52246
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1669177754.431][WARNING]: This version of ChromeDriver has not been tested with Chrome version 107.
+Nov 23, 2022 9:59:15 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Nov 23, 2022 9:59:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 107, so returning the closest version found: 106
+Nov 23, 2022 9:59:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 107 of 106
+Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 52755
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1669177866.843][WARNING]: This version of ChromeDriver has not been tested with Chrome version 107.
+Nov 23, 2022 10:01:07 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Nov 23, 2022 10:01:07 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 107, so returning the closest version found: 106
+Nov 23, 2022 10:01:07 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 107 of 106
+]]></system-err>
+</testsuite>
